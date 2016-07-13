@@ -89,13 +89,13 @@ Now, type df.  What does this tell you do you think?
 Make a directory for your volume.  Here's an example:
 
 ```
-mkdir /data
+sudo mkdir /data
 ```
 
 Mount your volume:
 
 ```
-mount /dev/xvdf /data
+sudo mount /dev/xvdf /data
 ```
 
 Type "df" again - and check it out.
@@ -109,7 +109,7 @@ cd /data
 The "/" is important note.  Now, release the permissions so that you can move files in and out (and anyone with the keyfile can).
 
 ```
-chmod 777 /data
+sudo chmod 777 /data
 ```
 
 chmod = change permissions; 777 = everyone can do things; 
