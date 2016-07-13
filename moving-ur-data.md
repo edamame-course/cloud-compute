@@ -22,7 +22,9 @@ Ok, let's start with defining some terms.  You already know what an EC2 instance
 3.  Format the volume 
 4.  Mount the volume to a directory of your choice, e.g., make it accessible
 
-## Start the cloud computer - anyone will do.
+## Start the cloud computer - any one will do.
+1.  Start an EC2 - feel like a pro
+
 Important:  Note where the location/availability of this instance is on your dashboard (e.g., US-east-1a).  Click on the lil box next to your instance and look at the details.
 
 ## Creating an EBS Volume
