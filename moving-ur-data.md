@@ -130,5 +130,12 @@ scp -i adina.pem ~/dataforedamame/*fastq ubuntu@ec2-54-90-239-39.compute-1.amazo
 
 This will transfer all fastq files in my dataforedamame directory.
 
+If you are moving data from a website or ftp site, get its web link by right clicking and copying link and do something like the following (except with your link).  wget is a program to get data from a web url:
+
+```
+cd /data
+wget https://vincentarelbundock.github.io/Rdatasets/csv/datasets/AirPassengers.csv
+```
+
 TADA!
 
