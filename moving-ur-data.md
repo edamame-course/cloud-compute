@@ -50,7 +50,9 @@ Here is the [link](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-attach
 
 Remember:  ssh -i <yourkeyfile> ubuntu@publicdns.amazon.com
 
-Example:  ssh -i adina.pem ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com
+Example:  
+
+ssh -i adina.pem ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com
 
 ## Check to see if your volume is attached
 
