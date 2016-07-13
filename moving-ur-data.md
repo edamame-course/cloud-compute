@@ -49,6 +49,7 @@ Here is the [link](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-attach
 ## Connect to your instance
 
 Remember:  ssh -i <yourkeyfile> ubuntu@publicdns.amazon.com
+
 Example:  ssh -i adina.pem ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com
 
 ## Check to see if your volume is attached
@@ -114,8 +115,12 @@ chmod = change permissions; 777 = everyone can do things;
 Get back to your laptop -- open up a terminal or the Windows equivalent (the thing you use to sign onto EC2 instances with ssh).  We're going to use the scp command.
 
 Remember:  scp -i <security file> <from location> <to location>
-Examples:  scp -i adina.pem ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com:~ubuntu/tutorials/data.txt ~/Downloads   (This is from my EC2 instance to my laptop)
-           scp -i adina.pem ~/Downloads/mycareer.docx ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com:/data  (This is from my laptop to EC2)
+
+Examples:  
+
+scp -i adina.pem ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com:~ubuntu/tutorials/data.txt ~/Downloads   (This is from my EC2 instance to my laptop)
+
+scp -i adina.pem ~/Downloads/mycareer.docx ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com:/data  (This is from my laptop to EC2)
 
 Both these examples are executed from my laptop!
 
