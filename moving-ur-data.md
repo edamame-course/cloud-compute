@@ -143,5 +143,5 @@ cd /data
 wget https://vincentarelbundock.github.io/Rdatasets/csv/datasets/AirPassengers.csv
 ```
 
-So....now you have your EBS volume.  This data in /data will not go away after you terminate yoru instance.  Note that data on your other non-EBS directories will terminate and disappear...yes...forever.  If you want to keep outputs from analysis, you'd want to keep it on /data or better yet, do all your analysis within the /data directory.  Also, note that you do have to pay for the hard drives on EBS - see (here)[https://aws.amazon.com/ebs/details/].  Go forth!  Save the world!
+So....now you have your EBS volume.  This data in /data will not go away after you terminate yoru instance.  Note that data on your other non-EBS directories will terminate and disappear...yes...forever.  If you want to keep outputs from analysis, you'd want to keep it on /data or better yet, do all your analysis within the /data directory.  Also, note that you do have to pay for the hard drives on EBS - see [here](https://aws.amazon.com/ebs/details/).  Go forth!  Save the world!
 
