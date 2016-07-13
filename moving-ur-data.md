@@ -118,7 +118,9 @@ chmod = change permissions; 777 = everyone can do things;
 
 Get back to your laptop -- open up a terminal or the Windows equivalent (the thing you use to sign onto EC2 instances with ssh).  We're going to use the scp command.
 
-Remember:  scp -i <security file> <from location> <to location>
+Remember:  
+
+scp -i <security file> <from location> <to location>
 
 Examples:  
 
@@ -141,5 +143,5 @@ cd /data
 wget https://vincentarelbundock.github.io/Rdatasets/csv/datasets/AirPassengers.csv
 ```
 
-TADA!
+So....now you have your EBS volume.  This data in /data will not go away after you terminate yoru instance.  Note that data on your other non-EBS directories will terminate and disappear...yes...forever.  If you want to keep outputs from analysis, you'd want to keep it on /data or better yet, do all your analysis within the /data directory.  Also, note that you do have to pay for the hard drives on EBS - see (here)[https://aws.amazon.com/ebs/details/].  Go forth!  Save the world!
 
