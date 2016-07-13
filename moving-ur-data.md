@@ -118,10 +118,6 @@ chmod = change permissions; 777 = everyone can do things;
 
 Get back to your laptop -- open up a terminal or the Windows equivalent (the thing you use to sign onto EC2 instances with ssh).  We're going to use the scp command.
 
-Remember:  
-
-scp -i <security file> <from location> <to location>
-
 Examples:  
 
 scp -i adina.pem ubuntu@ec2-54-90-239-39.compute-1.amazonaws.com:~ubuntu/tutorials/data.txt ~/Downloads   (This is from my EC2 instance to my laptop)
